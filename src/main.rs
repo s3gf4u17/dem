@@ -37,7 +37,7 @@ fn main() {
     argumentpointer+=1;
     match &std::env::args().nth(argumentpointer).expect("no action given") as &str {
         "--visualize"=>println!("visualize"),
-        "--export"=>println!("export"),
+        "--export"=>lib::export(coordinates),
         _=>panic!("non existing action"),
     }
 }
