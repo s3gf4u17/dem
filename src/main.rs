@@ -6,8 +6,12 @@ use std::io::prelude::*;
 
 fn handle_connection(mut stream:TcpStream) {
     let http_request : Vec<_> = BufReader::new(&mut stream).lines().map(|result|result.unwrap()).take_while(|line|!line.is_empty()).collect();
-    let content = include_str!("index.html");
-    let response = format!("{}\r\nContent-Length:{}\r\n\r\n{}","HTTP/1.1 200 OK",content.len(),content);
+    let (status,content) = match &http_request[0] as &str {
+        "GET / HTTP/1.1" => ("HTTP/1.1 200 OK",include_str!("index.html")),
+        "GET /script.js HTTP/1.1" => ("HTTP/1.1 200 OK",include_str!("script.js")),
+        _=>("HTTP/1.1 404 NOT FOUND","404 page not found"),
+    };
+    let response = format!("{}\r\nContent-Length:{}\r\n\r\n{}",status,content.len(),content);
     stream.write_all(response.as_bytes()).unwrap();
 }
 
