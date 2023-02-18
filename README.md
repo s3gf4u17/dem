@@ -35,6 +35,7 @@ arguments:
 |plain|-3|
 
 - input file
+
 |extensions|argument value|
 | --- | --- |
 |jpg/png|(path-to-file)|
