@@ -16,3 +16,12 @@ arguments:
 
 | file format | file extenstion | argument value |
 | --- | --- | ---|
+|Collada|.dae|-1|
+|Alembic|.abc|-2|
+|Universal Scene Description|.usd|-3|
+|Wavefront|.obj|-4|
+|Stanford|.ply|-5|
+|Stl|.stl|-6|
+|FBX|.fbx|-7|
+|glTF 2.0|.gltf|-8|
+|X3D Extensible 3D|.x3d|-9|
