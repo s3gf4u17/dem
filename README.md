@@ -12,7 +12,7 @@ sudo cp dem /bin/
 
 arguments:
 
-- export format
+- output format
 
 | file format | file extenstion | argument value |
 | --- | --- | ---|
@@ -25,3 +25,11 @@ arguments:
 |FBX|.fbx|-7|
 |glTF 2.0|.gltf|-8|
 |X3D Extensible 3D|.x3d|-9|
+
+- base shape
+
+|shape|argument|
+| --- | --- |
+|sphere|-1|
+|ellipsoid|-2|
+|plain|-3|
