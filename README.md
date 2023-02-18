@@ -37,4 +37,4 @@ arguments:
 - input file
 |extensions|argument value|
 | --- | --- |
-|jpg/png|<path-to-file>|
+|jpg/png|(path-to-file)|
