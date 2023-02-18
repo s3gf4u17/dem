@@ -9,3 +9,10 @@
 cd ~/Downloads/
 sudo cp dem /bin/
 ```
+
+arguments:
+
+- export format
+
+| file format | file extenstion | argument value |
+| --- | --- | ---|
