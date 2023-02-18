@@ -28,8 +28,13 @@ arguments:
 
 - base shape
 
-|shape|argument|
+|shape|argument value|
 | --- | --- |
 |sphere|-1|
 |ellipsoid|-2|
 |plain|-3|
+
+- input file
+|extensions|argument value|
+| --- | --- |
+|jpg/png|<path-to-file>|
