@@ -53,7 +53,12 @@ int main(int argc, char* argv[]) {
             break;
         case 'p':
             {
-                double pixel = width > height ? 1.0/(double)width : 1.0/(double)height;
+                double pixel = (width>height) ? 1.0/(double)width : 1.0/(double)height;
+                for (int i=0;i<width*height;i++) {
+                    vertex_data[3*i]= pixel*(i%width); // x
+                    vertex_data[3*i+2]= pixel*(i/width); // y
+                    vertex_data[3*i+1]= (double)data[i]/255.0/10.0; // z
+                }
             }
             break;
         default:
@@ -77,7 +82,7 @@ int main(int argc, char* argv[]) {
                 fprintf(file,"v %f %f %f\n",vertex_data[3*i],vertex_data[3*i+1],vertex_data[3*i+2]);
                 vertex_count++;
             }
-            fprintf(file,"s 1\n");
+            // fprintf(file,"s 1\n");
             for (int i=0;i<height+1;i++) {
                 for (int j=0;j<width+1;j++) {
                     fprintf(file,"f %i %i %i %i\n",width*(i-1)+j,width*(i-1)+j+1,width*i+j+1,width*i+j);
