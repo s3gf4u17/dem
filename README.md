@@ -39,5 +39,5 @@ arguments:
 - input file
 
 |extensions (+ channel count)|argument value|support|
-| --- | --- |
+| --- | --- | --- |
 |jpg 1/3/4|(path-to-file)|:heavy_check_mark::x::x:|
