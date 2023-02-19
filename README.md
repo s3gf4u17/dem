@@ -8,7 +8,9 @@
 g++ main.c -O3 -o demc
 ```
 
-## Use 
+## Use
+
+All arguments are required and they need to be put in an order as below:
 
 arguments:
 
