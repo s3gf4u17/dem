@@ -1,4 +1,4 @@
-<h1 align="center">DEM data visualization</h1>
+<h1 align="center">DEM data conversion</h1>
 
 ## Installation
 
