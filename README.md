@@ -30,9 +30,9 @@ arguments:
 
 |shape|argument value|
 | --- | --- |
-|sphere|-1|
-|ellipsoid|-2|
-|plain|-3|
+|sphere|-s|
+|ellipsoid|-e|
+|plain|-p|
 
 - input file
 
