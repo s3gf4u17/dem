@@ -1,30 +1,30 @@
-<h1 align="center">DEM</h1>
+<h1 align="center">DEM data visualization</h1>
 
 ## Installation
 
-- Linux
+- build from source
 
 ```bash
-# download prebuilt binary from github repo releases
-cd ~/Downloads/
-sudo cp dem /bin/
+g++ main.c -O3
 ```
+
+
 
 arguments:
 
 - output format
 
-| file format | file extenstion | argument value |
-| --- | --- | ---|
-|Collada|.dae|-1|
-|Alembic|.abc|-2|
-|Universal Scene Description|.usd|-3|
-|Wavefront|.obj|-4|
-|Stanford|.ply|-5|
-|Stl|.stl|-6|
-|FBX|.fbx|-7|
-|glTF 2.0|.gltf|-8|
-|X3D Extensible 3D|.x3d|-9|
+| file format | file extenstion | argument value | support |
+| --- | --- | --- | --- |
+|Collada|.dae|-1|:x:|
+|Alembic|.abc|-2|:x:|
+|Universal Scene Description|.usd|-3|:x:|
+|Wavefront|.obj|-4|:heavy_check_mark:|
+|Stanford|.ply|-5|:x:|
+|Stl|.stl|-6|:x:|
+|FBX|.fbx|-7|:x:|
+|glTF 2.0|.gltf|-8|:x:|
+|X3D Extensible 3D|.x3d|-9|:x:|
 
 - base shape
 
