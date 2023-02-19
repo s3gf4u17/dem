@@ -2,6 +2,8 @@
 
 ## Installation
 
+To install dem conversion tool you first need to install gnu gcc compiler.
+
 - build from source
 
 ```bash
