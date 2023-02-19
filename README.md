@@ -38,6 +38,6 @@ arguments:
 
 - input file
 
-|extensions|argument value|
+|extensions (+ channel count)|argument value|support|
 | --- | --- |
-|jpg/png|(path-to-file)|
+|jpg 1/3/4|(path-to-file)|:heavy_check_mark::x::x:|
