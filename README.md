@@ -5,10 +5,10 @@
 - build from source
 
 ```bash
-g++ main.c -O3
+g++ main.c -O3 -o demc
 ```
 
-
+## Use 
 
 arguments:
 
@@ -28,11 +28,11 @@ arguments:
 
 - base shape
 
-|shape|argument value|
-| --- | --- |
-|sphere|-s|
-|ellipsoid|-e|
-|plain|-p|
+|shape|argument value|support|
+| --- | --- | --- |
+|sphere|-s|:heavy_check_mark:|
+|ellipsoid|-e|:heavy_check_mark:|
+|plain|-p|:heavy_check_mark:|
 
 - input file
 
