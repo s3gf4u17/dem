@@ -38,6 +38,13 @@ arguments:
 
 - input file
 
-|extensions (+ channel count)|argument value|support|
+|file extension|argument value|support (channel count 1/3/4)|
 | --- | --- | --- |
-|jpg 1/3/4|(path-to-file)|:heavy_check_mark::x::x:|
+|jpg|(path-to-file)|:heavy_check_mark::x::x:|
+|png|(path-to-file)|:heavy_check_mark::x::x:|
+|tga|(path-to-file)|:heavy_check_mark::x::x:|
+|bmp|(path-to-file)|:heavy_check_mark::x::x:|
+|psd|(path-to-file)|:heavy_check_mark::x::x:|
+|gif|(path-to-file)|:heavy_check_mark::x::x:|
+|hdr|(path-to-file)|:heavy_check_mark::x::x:|
+|pic|(path-to-file)|:heavy_check_mark::x::x:|
